@@ -2,10 +2,10 @@ import { createFileRoute } from '@tanstack/react-router'
 import { NotFound } from 'src/components/NotFound'
 import { UserErrorComponent } from 'src/components/UserError'
 
-export const Route = createFileRoute('/users/$userId')({
+export const Route = createFileRoute('/example/users/$userId')({
   loader: async ({ params: { userId } }) => {
     try {
-      const res = await fetch('/api/users/' + userId)
+      const res = await fetch('/example/api/users/' + userId)
       if (!res.ok) {
         throw new Error('Unexpected status code')
       }
@@ -33,7 +33,7 @@ function UserComponent() {
       <div className="text-sm">{user.email}</div>
       <div>
         <a
-          href={`/api/users/${user.id}`}
+          href={`/example/api/users/${user.id}`}
           className="text-blue-800 hover:text-blue-600 underline"
         >
           View as JSON

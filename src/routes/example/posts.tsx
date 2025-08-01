@@ -1,7 +1,7 @@
 import { Link, Outlet, createFileRoute } from '@tanstack/react-router'
-import { fetchPosts } from '../utils/posts'
+import { fetchPosts } from '../../utils/posts'
 
-export const Route = createFileRoute('/posts')({
+export const Route = createFileRoute('/example/posts')({
   loader: async () => fetchPosts(),
   component: PostsComponent,
 })
@@ -17,7 +17,7 @@ function PostsComponent() {
             return (
               <li key={post.id} className="whitespace-nowrap">
                 <Link
-                  to="/posts/$postId"
+                  to="/example/posts/$postId"
                   params={{
                     postId: post.id,
                   }}

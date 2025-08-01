@@ -1,9 +1,9 @@
 import { Link, Outlet, createFileRoute } from '@tanstack/react-router'
-import type { User } from '../utils/users'
+import type { User } from '../../utils/users'
 
-export const Route = createFileRoute('/users')({
+export const Route = createFileRoute('/example/users')({
   loader: async () => {
-    const res = await fetch('/api/users')
+    const res = await fetch('/example/api/users')
 
     if (!res.ok) {
       throw new Error('Unexpected status code')
@@ -29,7 +29,7 @@ function UsersComponent() {
           return (
             <li key={user.id} className="whitespace-nowrap">
               <Link
-                to="/users/$userId"
+                to="/example/users/$userId"
                 params={{
                   userId: String(user.id),
                 }}
