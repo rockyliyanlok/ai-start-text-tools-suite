@@ -50,14 +50,7 @@ function ExampleLayout() {
         >
           Deferred
         </Link>{' '}
-        <Link
-          to="/example/this-route-does-not-exist"
-          activeProps={{
-            className: 'font-bold',
-          }}
-        >
-          This Route Does Not Exist
-        </Link>
+
       </div>
       <hr />
       <Outlet />

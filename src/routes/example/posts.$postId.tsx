@@ -20,7 +20,7 @@ function PostComponent() {
       <h4 className="text-xl font-bold underline">{post.title}</h4>
       <div className="text-sm">{post.body}</div>
       <Link
-        to="/posts/$postId/deep"
+        to="/example/posts/$postId/deep"
         params={{
           postId: post.id,
         }}
