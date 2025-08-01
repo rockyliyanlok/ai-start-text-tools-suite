@@ -15,7 +15,7 @@ Initialize the project using TanStack Start framework to set up a modern React a
 - Use `npx create-tanstack-app@latest` command
 - Select TypeScript as the language
 - Choose Vite as the bundler
-- Configure for React 18
+- Configure for React 19
 - Set up basic folder structure according to TDD
 
 **Files Involved**:
