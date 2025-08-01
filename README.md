@@ -5,7 +5,7 @@ A comprehensive web-based text processing toolkit built with modern technologies
 ## 🚀 Tech Stack
 
 - **Framework**: [TanStack Start](https://start.tanstack.com/)
-- **Frontend**: React 18 + TypeScript
+- **Frontend**: React 19 + TypeScript
 - **Styling**: Tailwind CSS + [shadcn/ui](https://ui.shadcn.com/)
 - **Deployment**: Vercel
 - **State Management**: TanStack Query + Jotai
@@ -22,8 +22,8 @@ A comprehensive web-based text processing toolkit built with modern technologies
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/text-tools-suite.git
-cd text-tools-suite
+git clone https://github.com/rockyliyanlok/ai-start-text-tools-suite.git
+cd ai-start-text-tools-suite
 ```
 
 2. Install dependencies:
